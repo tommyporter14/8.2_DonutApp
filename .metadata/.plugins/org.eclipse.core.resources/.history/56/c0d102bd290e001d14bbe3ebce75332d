@@ -1,0 +1,16 @@
+package co.grandcircus.DonutApp;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class DonutService {
+
+	RestTemplate rt = new RestTemplate();
+	
+	public List<Donut> getAllDonuts(){
+		String url = "https://grandcircusco.github.io/demo-apis/donuts.json";
+	}
+}

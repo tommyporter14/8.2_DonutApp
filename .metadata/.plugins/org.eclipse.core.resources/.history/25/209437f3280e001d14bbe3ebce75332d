@@ -1,0 +1,8 @@
+package co.grandcircus.DonutApp;
+
+import java.util.List;
+
+public class DonutResponse {
+
+	private List<Donut> results;
+}

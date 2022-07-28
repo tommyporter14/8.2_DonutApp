@@ -1,0 +1,19 @@
+package co.grandcircus.DonutApp;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class DonutController {
+
+	@RequestMapping("/")
+	public String home(Model model) {
+		return "home";
+	}
+	
+	@RequestMapping("/donut-details")
+	public String donutDetails(Model model) {
+		return "donut-details";
+	}
+}
